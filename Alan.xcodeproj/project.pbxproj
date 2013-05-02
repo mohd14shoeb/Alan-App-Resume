@@ -30,6 +30,8 @@
 		E7273D5C173290EC00F82FFE /* AZSectionDetailContentApps.m in Sources */ = {isa = PBXBuildFile; fileRef = E7273D5B173290EC00F82FFE /* AZSectionDetailContentApps.m */; };
 		E7273D5F173290F700F82FFE /* AZSectionDetailContentList.m in Sources */ = {isa = PBXBuildFile; fileRef = E7273D5E173290F700F82FFE /* AZSectionDetailContentList.m */; };
 		E7273D611732938D00F82FFE /* sections.json in Resources */ = {isa = PBXBuildFile; fileRef = E7273D601732938D00F82FFE /* sections.json */; };
+		E7273D671732962200F82FFE /* AZSectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7273D661732962100F82FFE /* AZSectionTableViewCell.xib */; };
+		E7273D6A1732970200F82FFE /* AZSectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7273D691732970200F82FFE /* AZSectionTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +69,9 @@
 		E7273D5D173290F700F82FFE /* AZSectionDetailContentList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZSectionDetailContentList.h; path = "Model/Content Types/AZSectionDetailContentList.h"; sourceTree = "<group>"; };
 		E7273D5E173290F700F82FFE /* AZSectionDetailContentList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AZSectionDetailContentList.m; path = "Model/Content Types/AZSectionDetailContentList.m"; sourceTree = "<group>"; };
 		E7273D601732938D00F82FFE /* sections.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sections.json; path = Model/sections.json; sourceTree = "<group>"; };
+		E7273D661732962100F82FFE /* AZSectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AZSectionTableViewCell.xib; path = View/Cells/AZSectionTableViewCell.xib; sourceTree = "<group>"; };
+		E7273D681732970200F82FFE /* AZSectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZSectionTableViewCell.h; path = View/Cells/AZSectionTableViewCell.h; sourceTree = "<group>"; };
+		E7273D691732970200F82FFE /* AZSectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AZSectionTableViewCell.m; path = View/Cells/AZSectionTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +147,7 @@
 		E7273D35173272B100F82FFE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E7273D62173295F500F82FFE /* Cells */,
 				E7273D36173272C800F82FFE /* AZRootViewController.h */,
 				E7273D37173272C800F82FFE /* AZRootViewController.m */,
 				E7273D38173272C800F82FFE /* AZRootViewController.xib */,
@@ -186,6 +192,16 @@
 				E7273D5E173290F700F82FFE /* AZSectionDetailContentList.m */,
 			);
 			name = "Content Types";
+			sourceTree = "<group>";
+		};
+		E7273D62173295F500F82FFE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E7273D681732970200F82FFE /* AZSectionTableViewCell.h */,
+				E7273D691732970200F82FFE /* AZSectionTableViewCell.m */,
+				E7273D661732962100F82FFE /* AZSectionTableViewCell.xib */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +266,7 @@
 				E7273D46173278ED00F82FFE /* avatar_selected.png in Resources */,
 				E7273D47173278ED00F82FFE /* avatar_selected@2x.png in Resources */,
 				E7273D611732938D00F82FFE /* sections.json in Resources */,
+				E7273D671732962200F82FFE /* AZSectionTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +286,7 @@
 				E7273D59173290CC00F82FFE /* AZSectionDetailContentText.m in Sources */,
 				E7273D5C173290EC00F82FFE /* AZSectionDetailContentApps.m in Sources */,
 				E7273D5F173290F700F82FFE /* AZSectionDetailContentList.m in Sources */,
+				E7273D6A1732970200F82FFE /* AZSectionTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

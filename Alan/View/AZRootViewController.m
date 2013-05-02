@@ -12,6 +12,7 @@
 
 #import "AZDataSource.h"
 #import "AZSection.h"
+#import "AZSectionTableViewCell.h"
 
 #define kAvatarAnimateKey @"avatar_bounce"
 
@@ -68,10 +69,13 @@
         return _sectionTableView;
     
     _sectionTableView = [[UITableView alloc] initWithFrame:CGRectMake(kSectionTableViewXOffset, kSectionTableViewYOffset, kSectionTableViewWidth, kSectionTableViewHeight) style:UITableViewStylePlain];
+    _sectionTableView.scrollEnabled = NO;
     _sectionTableView.backgroundColor = [UIColor clearColor];
     _sectionTableView.separatorColor = [UIColor colorWithRed:0.96f green:0.61f blue:0.60f alpha:1.00f];
     _sectionTableView.delegate = self;
     _sectionTableView.dataSource = self;
+    
+    [_sectionTableView registerNib:[UINib nibWithNibName:@"AZSectionTableViewCell" bundle:nil] forCellReuseIdentifier:@"SectionCellIdentifier"];
     
     [self.view addSubview:_sectionTableView];
     
@@ -106,7 +110,7 @@
 
 - (void)hideView:(UIView *)view
 {
-    [UIView animateWithDuration:.4f animations:^{ view.alpha = 0.f; }];
+    [UIView animateWithDuration:.2f animations:^{ view.alpha = 0.f; }];
 }
 
 - (void)firstAnimation
@@ -134,13 +138,21 @@
     // Animate avatar and center label to top margin. Animate table view into view.
     CGRect avatarFrame = self.avatarButton.frame;
     avatarFrame.origin.y = 0.f;
+    
+    CGRect tableFrame = self.sectionTableView.frame;
+    tableFrame.origin.y = self.view.bounds.size.height;
+    self.sectionTableView.frame = tableFrame;
+    
+    tableFrame.origin.y = kSectionTableViewYOffset;
+    
     [UIView animateWithDuration:.4f
                           delay:.0f
                         options:0
                      animations:^{
                          self.avatarButton.frame = avatarFrame;
-                         self.avatarButton.transform = CGAffineTransformMakeScale(0.35,0.35);
+                         self.avatarButton.transform = CGAffineTransformMakeScale(.55f, .55f);
                          self.sectionTableView.alpha = 1.f;
+                         self.sectionTableView.frame = tableFrame;
                      }
                      completion:^(BOOL finished) {
                          self.avatarButton.userInteractionEnabled = NO;
@@ -185,6 +197,8 @@
 {
     [super viewDidAppear:animated];
     
+    self.view.backgroundColor = [UIColor colorWithRed:0.94f green:0.25f blue:0.23f alpha:1.00f];
+    
     [self firstAnimation];
 }
 
@@ -219,13 +233,25 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"SectionCellIdentifier"];
+    AZSectionTableViewCell *cell = [self.sectionTableView dequeueReusableCellWithIdentifier:@"SectionCellIdentifier" forIndexPath:indexPath];
     
     AZSection *section = self.sections[indexPath.row];
     
-    cell.textLabel.text = section.title;
+    cell.titleLabel.text = section.title;
     
     return cell;
+}
+
+#pragma mark - UITableViewControllerDelegate
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    return [UIView new];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
 }
 
 @end

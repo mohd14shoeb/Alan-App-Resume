@@ -36,7 +36,7 @@
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
 				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUIButton" id="229802575">
+					<object class="IBUIButton" id="271683509">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{116, 230}, {88, 88}}</string>
@@ -48,11 +48,11 @@
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<string key="IBUINormalTitle">Button</string>
-						<object class="NSColor" key="IBUIHighlightedTitleColor" id="733015441">
+						<object class="NSColor" key="IBUIHighlightedTitleColor" id="838159324">
 							<int key="NSColorSpace">2</int>
 							<bytes key="NSRGB">MC45NTY4NjI4MDczIDAuNjA3ODQzMTYwNiAwLjYwNzg0MzE2MDYAA</bytes>
 						</object>
-						<reference key="IBUISelectedTitleColor" ref="733015441"/>
+						<reference key="IBUISelectedTitleColor" ref="838159324"/>
 						<object class="NSColor" key="IBUINormalTitleColor">
 							<int key="NSColorSpace">2</int>
 							<bytes key="NSRGB">MC45NTY4NjI4MDczIDAuNjA3ODQzMTYwNiAwLjYwNzg0MzE2MDYAA</bytes>
@@ -61,11 +61,11 @@
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MC41AA</bytes>
 						</object>
-						<object class="NSCustomResource" key="IBUIHighlightedImage" id="664621339">
+						<object class="NSCustomResource" key="IBUIHighlightedImage" id="404857609">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">avatar_selected.png</string>
 						</object>
-						<reference key="IBUISelectedImage" ref="664621339"/>
+						<reference key="IBUISelectedImage" ref="404857609"/>
 						<object class="NSCustomResource" key="IBUINormalImage">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">avatar.png</string>
@@ -80,13 +80,13 @@
 							<int key="NSfFlags">16</int>
 						</object>
 					</object>
-					<object class="IBUILabel" id="669164349">
+					<object class="IBUILabel" id="780380838">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{20, 190}, {280, 21}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="229802575"/>
+						<reference key="NSNextKeyView" ref="271683509"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -116,7 +116,7 @@
 				<string key="NSFrame">{{0, 20}, {320, 548}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="669164349"/>
+				<reference key="NSNextKeyView" ref="780380838"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">2</int>
 					<bytes key="NSRGB">MC45MjU0OTAyNjAxIDAuMjU0OTAxOTc1NCAwLjI1NDkwMTk3NTQAA</bytes>
@@ -156,7 +156,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">avatarButton</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="229802575"/>
+						<reference key="destination" ref="271683509"/>
 					</object>
 					<int key="connectionID">14</int>
 				</object>
@@ -164,14 +164,14 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">centerLabel</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="669164349"/>
+						<reference key="destination" ref="780380838"/>
 					</object>
 					<int key="connectionID">18</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">avatarTouchUp:</string>
-						<reference key="source" ref="229802575"/>
+						<reference key="source" ref="271683509"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
@@ -180,7 +180,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">avatarTouchDown:</string>
-						<reference key="source" ref="229802575"/>
+						<reference key="source" ref="271683509"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">1</int>
 					</object>
@@ -189,7 +189,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">avatarTouchDown:</string>
-						<reference key="source" ref="229802575"/>
+						<reference key="source" ref="271683509"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">5</int>
 					</object>
@@ -198,7 +198,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">avatarTouchCancel:</string>
-						<reference key="source" ref="229802575"/>
+						<reference key="source" ref="271683509"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">6</int>
 					</object>
@@ -217,8 +217,8 @@
 						<int key="objectID">1</int>
 						<reference key="object" ref="191373211"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="229802575"/>
-							<reference ref="669164349"/>
+							<reference ref="271683509"/>
+							<reference ref="780380838"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -235,13 +235,13 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">4</int>
-						<reference key="object" ref="229802575"/>
+						<reference key="object" ref="271683509"/>
 						<array class="NSMutableArray" key="children"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">17</int>
-						<reference key="object" ref="669164349"/>
+						<reference key="object" ref="780380838"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</array>
