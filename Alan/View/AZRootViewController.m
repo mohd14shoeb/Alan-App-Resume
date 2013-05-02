@@ -12,7 +12,11 @@
 
 #import "AZDataSource.h"
 #import "AZSection.h"
+#import "AZSectionDetail.h"
 #import "AZSectionTableViewCell.h"
+#import "AZListViewController.h"
+#import "AZTextViewController.h"
+#import "AZAppsViewController.h"
 
 #define kAvatarAnimateKey @"avatar_bounce"
 
@@ -251,7 +255,26 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    AZSection *section = self.sections[indexPath.row];
     
+    UIViewController *nextViewController = nil;
+    switch (section.sectionDetail.type)
+    {
+        case AZSectionTypeApps : nextViewController = [[AZAppsViewController alloc] init]; break;
+        case AZSectionTypeText : nextViewController = [[AZTextViewController alloc] init]; break;
+        case AZSectionTypeList : nextViewController = [[AZListViewController alloc] init]; break;
+        case AZSectionTypeUnknown : nextViewController = nil; break;
+    }
+    
+    switch (section.sectionDetail.type)
+    {
+        case AZSectionTypeApps : ((AZAppsViewController *)nextViewController).sectionDetail = section.sectionDetail; break;
+        case AZSectionTypeText : ((AZTextViewController *)nextViewController).sectionDetail = section.sectionDetail; break;
+        case AZSectionTypeList : ((AZListViewController *)nextViewController).sectionDetail = section.sectionDetail; break;
+        case AZSectionTypeUnknown : nextViewController = nil; break;
+    }
+    
+    [self.navigationController pushViewController:nextViewController animated:YES];
 }
 
 @end

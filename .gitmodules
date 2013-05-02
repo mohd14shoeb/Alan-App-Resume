@@ -1,0 +1,3 @@
+[submodule "lib/DAAppsViewController"]
+	path = lib/DAAppsViewController
+	url = git@github.com:danielamitay/DAAppsViewController.git

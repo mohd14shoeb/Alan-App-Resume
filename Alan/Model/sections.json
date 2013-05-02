@@ -60,5 +60,16 @@
 		"title" : "App Store Work",
 		"type" : 0,
 		"content" : []
+	},
+	{
+		"title" : "Open Source Attribution",
+		"type" : 2,
+		"content" : [
+			{
+				"title" : "DAAppsViewController",
+				"subtitle" : "Daniel Amitay",
+				"supplementary" : "MIT License"
+			}
+		]
 	}
 ]

@@ -32,6 +32,16 @@
 		E7273D611732938D00F82FFE /* sections.json in Resources */ = {isa = PBXBuildFile; fileRef = E7273D601732938D00F82FFE /* sections.json */; };
 		E7273D671732962200F82FFE /* AZSectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7273D661732962100F82FFE /* AZSectionTableViewCell.xib */; };
 		E7273D6A1732970200F82FFE /* AZSectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7273D691732970200F82FFE /* AZSectionTableViewCell.m */; };
+		E7273D7017329CC400F82FFE /* AZAppsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7273D6F17329CC400F82FFE /* AZAppsViewController.m */; };
+		E7273D7317329CD200F82FFE /* AZTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7273D7217329CD200F82FFE /* AZTextViewController.m */; };
+		E7273D7617329CF100F82FFE /* AZListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7273D7517329CF100F82FFE /* AZListViewController.m */; };
+		E7273D7C17329E0E00F82FFE /* AZListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7273D7B17329E0E00F82FFE /* AZListTableViewCell.m */; };
+		E7273D7E17329E2100F82FFE /* AZListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7273D7D17329E2100F82FFE /* AZListTableViewCell.xib */; };
+		E7273D851732A67D00F82FFE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7273D841732A67D00F82FFE /* StoreKit.framework */; };
+		E7273D8E1732A6CC00F82FFE /* DAAppObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E7273D881732A6CC00F82FFE /* DAAppObject.m */; };
+		E7273D8F1732A6CC00F82FFE /* DAAppsViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E7273D891732A6CC00F82FFE /* DAAppsViewController.bundle */; };
+		E7273D901732A6CC00F82FFE /* DAAppsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7273D8B1732A6CC00F82FFE /* DAAppsViewController.m */; };
+		E7273D911732A6CC00F82FFE /* DAAppViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7273D8D1732A6CC00F82FFE /* DAAppViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +82,23 @@
 		E7273D661732962100F82FFE /* AZSectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AZSectionTableViewCell.xib; path = View/Cells/AZSectionTableViewCell.xib; sourceTree = "<group>"; };
 		E7273D681732970200F82FFE /* AZSectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZSectionTableViewCell.h; path = View/Cells/AZSectionTableViewCell.h; sourceTree = "<group>"; };
 		E7273D691732970200F82FFE /* AZSectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AZSectionTableViewCell.m; path = View/Cells/AZSectionTableViewCell.m; sourceTree = "<group>"; };
+		E7273D6E17329CC400F82FFE /* AZAppsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZAppsViewController.h; path = View/Apps/AZAppsViewController.h; sourceTree = "<group>"; };
+		E7273D6F17329CC400F82FFE /* AZAppsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AZAppsViewController.m; path = View/Apps/AZAppsViewController.m; sourceTree = "<group>"; };
+		E7273D7117329CD200F82FFE /* AZTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZTextViewController.h; path = View/Text/AZTextViewController.h; sourceTree = "<group>"; };
+		E7273D7217329CD200F82FFE /* AZTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AZTextViewController.m; path = View/Text/AZTextViewController.m; sourceTree = "<group>"; };
+		E7273D7417329CF100F82FFE /* AZListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZListViewController.h; path = View/List/AZListViewController.h; sourceTree = "<group>"; };
+		E7273D7517329CF100F82FFE /* AZListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AZListViewController.m; path = View/List/AZListViewController.m; sourceTree = "<group>"; };
+		E7273D7A17329E0E00F82FFE /* AZListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZListTableViewCell.h; path = View/Cells/AZListTableViewCell.h; sourceTree = "<group>"; };
+		E7273D7B17329E0E00F82FFE /* AZListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AZListTableViewCell.m; path = View/Cells/AZListTableViewCell.m; sourceTree = "<group>"; };
+		E7273D7D17329E2100F82FFE /* AZListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AZListTableViewCell.xib; path = View/Cells/AZListTableViewCell.xib; sourceTree = "<group>"; };
+		E7273D841732A67D00F82FFE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		E7273D871732A6CC00F82FFE /* DAAppObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAAppObject.h; sourceTree = "<group>"; };
+		E7273D881732A6CC00F82FFE /* DAAppObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAAppObject.m; sourceTree = "<group>"; };
+		E7273D891732A6CC00F82FFE /* DAAppsViewController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DAAppsViewController.bundle; sourceTree = "<group>"; };
+		E7273D8A1732A6CC00F82FFE /* DAAppsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAAppsViewController.h; sourceTree = "<group>"; };
+		E7273D8B1732A6CC00F82FFE /* DAAppsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAAppsViewController.m; sourceTree = "<group>"; };
+		E7273D8C1732A6CC00F82FFE /* DAAppViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAAppViewCell.h; sourceTree = "<group>"; };
+		E7273D8D1732A6CC00F82FFE /* DAAppViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAAppViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7273D851732A67D00F82FFE /* StoreKit.framework in Frameworks */,
 				E7273D431732782600F82FFE /* QuartzCore.framework in Frameworks */,
 				E7273D19173272A100F82FFE /* UIKit.framework in Frameworks */,
 				E7273D1B173272A100F82FFE /* Foundation.framework in Frameworks */,
@@ -109,6 +137,7 @@
 		E7273D17173272A100F82FFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E7273D841732A67D00F82FFE /* StoreKit.framework */,
 				E7273D421732782600F82FFE /* QuartzCore.framework */,
 				E7273D18173272A100F82FFE /* UIKit.framework */,
 				E7273D1A173272A100F82FFE /* Foundation.framework */,
@@ -133,6 +162,7 @@
 		E7273D1F173272A100F82FFE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E7273D861732A6CC00F82FFE /* DAAppsViewController */,
 				E7273D20173272A100F82FFE /* Alan-Info.plist */,
 				E7273D21173272A100F82FFE /* InfoPlist.strings */,
 				E7273D24173272A100F82FFE /* main.m */,
@@ -147,6 +177,9 @@
 		E7273D35173272B100F82FFE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E7273D6D17329C9F00F82FFE /* List */,
+				E7273D6C17329C9900F82FFE /* Text */,
+				E7273D6B17329C9300F82FFE /* Apps */,
 				E7273D62173295F500F82FFE /* Cells */,
 				E7273D36173272C800F82FFE /* AZRootViewController.h */,
 				E7273D37173272C800F82FFE /* AZRootViewController.m */,
@@ -200,9 +233,54 @@
 				E7273D681732970200F82FFE /* AZSectionTableViewCell.h */,
 				E7273D691732970200F82FFE /* AZSectionTableViewCell.m */,
 				E7273D661732962100F82FFE /* AZSectionTableViewCell.xib */,
+				E7273D7A17329E0E00F82FFE /* AZListTableViewCell.h */,
+				E7273D7B17329E0E00F82FFE /* AZListTableViewCell.m */,
+				E7273D7D17329E2100F82FFE /* AZListTableViewCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
+		};
+		E7273D6B17329C9300F82FFE /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				E7273D6E17329CC400F82FFE /* AZAppsViewController.h */,
+				E7273D6F17329CC400F82FFE /* AZAppsViewController.m */,
+			);
+			name = Apps;
+			sourceTree = "<group>";
+		};
+		E7273D6C17329C9900F82FFE /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				E7273D7117329CD200F82FFE /* AZTextViewController.h */,
+				E7273D7217329CD200F82FFE /* AZTextViewController.m */,
+			);
+			name = Text;
+			sourceTree = "<group>";
+		};
+		E7273D6D17329C9F00F82FFE /* List */ = {
+			isa = PBXGroup;
+			children = (
+				E7273D7417329CF100F82FFE /* AZListViewController.h */,
+				E7273D7517329CF100F82FFE /* AZListViewController.m */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		E7273D861732A6CC00F82FFE /* DAAppsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E7273D871732A6CC00F82FFE /* DAAppObject.h */,
+				E7273D881732A6CC00F82FFE /* DAAppObject.m */,
+				E7273D891732A6CC00F82FFE /* DAAppsViewController.bundle */,
+				E7273D8A1732A6CC00F82FFE /* DAAppsViewController.h */,
+				E7273D8B1732A6CC00F82FFE /* DAAppsViewController.m */,
+				E7273D8C1732A6CC00F82FFE /* DAAppViewCell.h */,
+				E7273D8D1732A6CC00F82FFE /* DAAppViewCell.m */,
+			);
+			name = DAAppsViewController;
+			path = lib/DAAppsViewController/DAAppsViewController;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -267,6 +345,8 @@
 				E7273D47173278ED00F82FFE /* avatar_selected@2x.png in Resources */,
 				E7273D611732938D00F82FFE /* sections.json in Resources */,
 				E7273D671732962200F82FFE /* AZSectionTableViewCell.xib in Resources */,
+				E7273D7E17329E2100F82FFE /* AZListTableViewCell.xib in Resources */,
+				E7273D8F1732A6CC00F82FFE /* DAAppsViewController.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +367,13 @@
 				E7273D5C173290EC00F82FFE /* AZSectionDetailContentApps.m in Sources */,
 				E7273D5F173290F700F82FFE /* AZSectionDetailContentList.m in Sources */,
 				E7273D6A1732970200F82FFE /* AZSectionTableViewCell.m in Sources */,
+				E7273D7017329CC400F82FFE /* AZAppsViewController.m in Sources */,
+				E7273D7317329CD200F82FFE /* AZTextViewController.m in Sources */,
+				E7273D7617329CF100F82FFE /* AZListViewController.m in Sources */,
+				E7273D7C17329E0E00F82FFE /* AZListTableViewCell.m in Sources */,
+				E7273D8E1732A6CC00F82FFE /* DAAppObject.m in Sources */,
+				E7273D901732A6CC00F82FFE /* DAAppsViewController.m in Sources */,
+				E7273D911732A6CC00F82FFE /* DAAppViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
