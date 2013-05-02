@@ -8,13 +8,36 @@
 
 #import "AZAppDelegate.h"
 
+#import "AZRootViewController.h"
+
+@interface AZAppDelegate ()
+
+@property (strong, nonatomic) AZRootViewController *rootViewController;
+
+@end
+
 @implementation AZAppDelegate
+
+#pragma mark - Instance
+
+- (AZRootViewController *)rootViewController
+{
+    if (_rootViewController)
+        return _rootViewController;
+    
+    _rootViewController = [[AZRootViewController alloc] init];
+    
+    return _rootViewController;
+}
+
+#pragma mark - UIApplicationDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:self.rootViewController];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
