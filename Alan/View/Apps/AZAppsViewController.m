@@ -10,16 +10,39 @@
 
 #import "DAAppsViewController.h"
 
+#import "AZSectionDetailContentApps.h"
+
 @interface AZAppsViewController ()
+
+@property (strong, nonatomic) DAAppsViewController *appsViewController;
 
 @end
 
 @implementation AZAppsViewController
 
-- (void)viewDidLoad
+#pragma mark - Instance
+
+- (DAAppsViewController *)appsViewController
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    if (_appsViewController)
+        return _appsViewController;
+    
+    _appsViewController = [[DAAppsViewController alloc] initWithStyle:UITableViewStylePlain];
+    
+    return _appsViewController;
+}
+
+#pragma mark - UIViewController
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self.appsViewController loadAppsWithAppIds:((AZSectionDetailContentApps *)self.sectionDetail.detail).appIds completionBlock:nil];
+	
+    [self addChildViewController:self.appsViewController];
+    [self.view addSubview:self.appsViewController.view];
+    [self.appsViewController didMoveToParentViewController:self];
 }
 
 - (void)didReceiveMemoryWarning
