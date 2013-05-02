@@ -10,6 +10,7 @@
 
 #import "DAAppsViewController.h"
 
+#import "AZSection.h"
 #import "AZSectionDetailContentApps.h"
 
 @interface AZAppsViewController ()
@@ -37,6 +38,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
+    self.title = ((AZSection *)self.sectionDetail.section).title;
     
     [self.appsViewController loadAppsWithAppIds:((AZSectionDetailContentApps *)self.sectionDetail.detail).appIds completionBlock:nil];
 	

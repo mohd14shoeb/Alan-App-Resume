@@ -8,6 +8,7 @@
 
 #import "AZListViewController.h"
 
+#import "AZSection.h"
 #import "AZSectionDetailContentList.h"
 #import "AZListTableViewCell.h"
 
@@ -25,6 +26,13 @@
     self.tableView.separatorColor = [UIColor colorWithRed:0.96f green:0.61f blue:0.60f alpha:1.00f];
 
     [self.tableView registerNib:[UINib nibWithNibName:@"AZListTableViewCell" bundle:nil] forCellReuseIdentifier:@"ListCellIdentifier"];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    self.title = ((AZSection *)self.sectionDetail.section).title;
 }
 
 - (void)didReceiveMemoryWarning
@@ -93,17 +101,11 @@
 }
 */
 
-#pragma mark - Table view delegate
+#pragma mark - UITableViewControllerDelegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    return [UIView new];
 }
 
 @end

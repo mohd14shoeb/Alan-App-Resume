@@ -36,6 +36,8 @@
 @property (strong, nonatomic) IBOutlet UIButton *avatarButton;
 @property (strong, nonatomic) UITableView *sectionTableView;
 
+@property (assign, nonatomic) BOOL isSetup;
+
 - (void)bounceView:(UIView *)view;
 - (void)hideView:(UIView *)view;
 
@@ -90,6 +92,9 @@
 
 - (void)bounceView:(UIView *)view
 {
+    if (self.isSetup)
+        return;
+    
     [UIView animateWithDuration:0.4 animations:^{ view.alpha = 1.f; }];
     
     view.layer.transform = CATransform3DMakeScale(.5f, .5f, 1.f);
@@ -129,7 +134,10 @@
 
 - (void)touchUpInside
 {
-    [self setup];
+    if (self.isSetup)
+        [self reset];
+    else
+        [self setup];
 }
 
 - (void)touchCancel
@@ -159,7 +167,7 @@
                          self.sectionTableView.frame = tableFrame;
                      }
                      completion:^(BOOL finished) {
-                         self.avatarButton.userInteractionEnabled = NO;
+                         self.isSetup = YES;
                      }];
     
     [self hideView:self.centerLabel];
@@ -167,13 +175,26 @@
 
 - (void)reset
 {
-    
+    [UIView animateWithDuration:.4f
+                          delay:.0f
+                        options:0
+                     animations:^{
+                         self.avatarButton.center = CGPointMake(self.view.bounds.size.width / 2, self.view.bounds.size.height / 2);
+                         self.avatarButton.transform = CGAffineTransformMakeScale(1.f, 1.f);
+                         self.sectionTableView.alpha = 0.f;
+                     }
+                     completion:^(BOOL finished) {
+                         self.isSetup = NO;
+                     }];
 }
 
 #pragma mark - IBAction
 
 - (IBAction)avatarTouchDown:(id)sender
 {
+    if (self.isSetup)
+        return;
+    
     [self touchDown];
 }
 
@@ -184,6 +205,9 @@
 
 - (IBAction)avatarTouchCancel:(id)sender
 {
+    if (self.isSetup)
+        return;
+    
     [self touchCancel];
 }
 
@@ -209,9 +233,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
-    self.avatarButton.alpha = 0.f;
-    
+        
     [self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 

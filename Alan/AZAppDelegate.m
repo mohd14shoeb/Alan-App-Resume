@@ -14,6 +14,8 @@
 
 @property (strong, nonatomic) AZRootViewController *rootViewController;
 
+- (void)configureAppearance;
+
 @end
 
 @implementation AZAppDelegate
@@ -30,13 +32,43 @@
     return _rootViewController;
 }
 
+#pragma mark - Private
+
+- (void)configureAppearance
+{
+    UIImage *navBarBackground = [UIImage imageNamed:@"navigationBarBackground.png"];
+    [[UINavigationBar appearance] setBackgroundImage:navBarBackground forBarMetrics:UIBarMetricsDefault];
+    
+    NSDictionary *titleAttributes = @{ UITextAttributeTextColor : [UIColor colorWithRed:0.96f green:0.61f blue:0.60f alpha:1.00f],
+                                       UITextAttributeTextShadowOffset : [NSValue valueWithUIOffset:UIOffsetMake(0.f, 0.f)],
+                                       UITextAttributeTextShadowColor : [UIColor clearColor],
+                                       UITextAttributeFont : [UIFont fontWithName:@"HelveticaNeue-Bold" size:15.f] };
+    [[UINavigationBar appearance] setTitleTextAttributes:titleAttributes];
+    
+    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
+    
+    
+    UIImage *backButtonImage = [[UIImage imageNamed:@"navigationBarBackButton.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0.f, 44.f, 0.f, 0.f)];
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(-400.f, 0)
+                                                         forBarMetrics:UIBarMetricsDefault];
+    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage
+                                                      forState:UIControlStateNormal
+                                                    barMetrics:UIBarMetricsDefault];
+    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage
+                                                      forState:UIControlStateHighlighted
+                                                    barMetrics:UIBarMetricsDefault];
+}
+
 #pragma mark - UIApplicationDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor colorWithRed:0.94f green:0.25f blue:0.23f alpha:1.00f];
     
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:self.rootViewController];
+    
+    [self configureAppearance];
     
     [self.window makeKeyAndVisible];
     return YES;

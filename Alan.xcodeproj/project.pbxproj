@@ -42,6 +42,10 @@
 		E7273D9C1732AB6A00F82FFE /* DAAppsViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E7273D961732AB6A00F82FFE /* DAAppsViewController.bundle */; };
 		E7273D9D1732AB6A00F82FFE /* DAAppsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7273D981732AB6A00F82FFE /* DAAppsViewController.m */; };
 		E7273D9E1732AB6A00F82FFE /* DAAppViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7273D9A1732AB6A00F82FFE /* DAAppViewCell.m */; };
+		E7273DA01732AC3900F82FFE /* AZTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7273D9F1732AC3900F82FFE /* AZTextViewController.xib */; };
+		E7273DA21732B36B00F82FFE /* navigationBarBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = E7273DA11732B36B00F82FFE /* navigationBarBackground.png */; };
+		E7273DA51732B48D00F82FFE /* navigationBarBackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E7273DA31732B48D00F82FFE /* navigationBarBackButton.png */; };
+		E7273DA61732B48D00F82FFE /* navigationBarBackButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7273DA41732B48D00F82FFE /* navigationBarBackButton@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +103,10 @@
 		E7273D981732AB6A00F82FFE /* DAAppsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAAppsViewController.m; sourceTree = "<group>"; };
 		E7273D991732AB6A00F82FFE /* DAAppViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAAppViewCell.h; sourceTree = "<group>"; };
 		E7273D9A1732AB6A00F82FFE /* DAAppViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAAppViewCell.m; sourceTree = "<group>"; };
+		E7273D9F1732AC3900F82FFE /* AZTextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AZTextViewController.xib; path = View/Text/AZTextViewController.xib; sourceTree = "<group>"; };
+		E7273DA11732B36B00F82FFE /* navigationBarBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = navigationBarBackground.png; path = Imagery/navigationBarBackground.png; sourceTree = "<group>"; };
+		E7273DA31732B48D00F82FFE /* navigationBarBackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = navigationBarBackButton.png; path = Imagery/navigationBarBackButton.png; sourceTree = "<group>"; };
+		E7273DA41732B48D00F82FFE /* navigationBarBackButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navigationBarBackButton@2x.png"; path = "Imagery/navigationBarBackButton@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +203,9 @@
 				E7273D45173278ED00F82FFE /* avatar_selected@2x.png */,
 				E7273D3C173276C800F82FFE /* avatar.png */,
 				E7273D3D173276C800F82FFE /* avatar@2x.png */,
+				E7273DA31732B48D00F82FFE /* navigationBarBackButton.png */,
+				E7273DA41732B48D00F82FFE /* navigationBarBackButton@2x.png */,
+				E7273DA11732B36B00F82FFE /* navigationBarBackground.png */,
 			);
 			name = Imagery;
 			sourceTree = "<group>";
@@ -254,6 +265,7 @@
 			children = (
 				E7273D7117329CD200F82FFE /* AZTextViewController.h */,
 				E7273D7217329CD200F82FFE /* AZTextViewController.m */,
+				E7273D9F1732AC3900F82FFE /* AZTextViewController.xib */,
 			);
 			name = Text;
 			sourceTree = "<group>";
@@ -347,6 +359,10 @@
 				E7273D671732962200F82FFE /* AZSectionTableViewCell.xib in Resources */,
 				E7273D7E17329E2100F82FFE /* AZListTableViewCell.xib in Resources */,
 				E7273D9C1732AB6A00F82FFE /* DAAppsViewController.bundle in Resources */,
+				E7273DA01732AC3900F82FFE /* AZTextViewController.xib in Resources */,
+				E7273DA21732B36B00F82FFE /* navigationBarBackground.png in Resources */,
+				E7273DA51732B48D00F82FFE /* navigationBarBackButton.png in Resources */,
+				E7273DA61732B48D00F82FFE /* navigationBarBackButton@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

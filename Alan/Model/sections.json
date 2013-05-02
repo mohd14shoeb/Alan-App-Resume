@@ -2,7 +2,7 @@
 	{
 		"title" : "About Alan",
 		"type" : 1,
-		"content" : "Small batch iphone."
+		"content" : "I'm an iOS Software Engineer from Sydney, Australia. I've been writing software for iOS for over five years for large businesses in Australia, as well as startups and personal projects. As a freelancer, I have been involved in dozens of iOS apps on the App Store — either as a developer or consultant. In industry, I have worked for MDM solution providers, mobility providers and recently for Yahoo Inc. I have written software for the enterprise; creating iPad–based retail installations deployed at retailers as far as Estee Lauder in New York! \n \n I love design. My affinity for design was born after studying Human Computer Interaction. I design a lot of my software — this app was entirely designed from scratch! \n \n I am in my final semester at the University of New South Wales completing a Bachelor of Computer Science and a Bachelor of Arts. \n \n I am employed by the University of New South Wales as a Casual Academic, teaching Human Computer Interaction, Introductory Computer Science and Introductory Computing for Engineers. \n \n I teach iOS Development at UNSW pro bono, and I have taught iOS Development in industry for General Assembly in Sydney. \n \n I have picked a small handful of apps to showcase in this app — the great majority of my work in freelance is protected from disclosure. \n \n You may need to set your device's locale to Australia to see some of the apps in SKStoreProductViewController."
 	},
 	{
 		"title" : "Employment History",
@@ -17,6 +17,11 @@
 				"title" : "Director",
 				"subtitle" : "Synthetica Pty Ltd",
 				"supplementary" : "2012 — Current"
+			},
+			{
+				"title" : "Casual Academic",
+				"subtitle" : "University of New South Wales",
+				"supplementary" : "2009 — Current"
 			},
 			{
 				"title" : "iOS Software Engineer",
@@ -41,13 +46,13 @@
 		]
 	},
 	{
-		"title" : "Education and Achievements",
+		"title" : "Education",
 		"type" : 2,
 		"content" : [
 			{
 				"title" : "Bachelor of Computer Science",
 				"subtitle" : "University of New South Wales",
-				"supplementary" : "2008 — 2010"
+				"supplementary" : "2008 — 2012"
 			},
 			{
 				"title" : "Bachelor of Arts",
@@ -57,19 +62,51 @@
 		]
 	},
 	{
+		"title" : "Technical Proficiency",
+		"type" : 2,
+		"content" : [
+			{
+				"title" : "Objective-C",
+				"subtitle" : "5+ Years",
+				"supplementary" : ""
+			},
+			{
+				"title" : "C",
+				"subtitle" : "8 Years",
+				"supplementary" : ""
+			},
+			{
+				"title" : "Ruby",
+				"subtitle" : "2 Years",
+				"supplementary" : ""
+			},
+			{
+				"title" : "git",
+				"subtitle" : "3+ Years",
+				"supplementary" : ""
+			},
+			{
+				"title" : "Adobe Photoshop",
+				"subtitle" : "12+ Years",
+				"supplementary" : ""
+			}
+		]
+	},
+	{
 		"title" : "App Store Work",
 		"type" : 0,
 		"content" : [
-			396053958,
 			615813228,
 			533047393,
 			521038211,
 			439828000,
-			486259635
+			486259635,
+			396053958,
+			398901061
 		]
 	},
 	{
-		"title" : "Open Source Attribution",
+		"title" : "Attribution",
 		"type" : 2,
 		"content" : [
 			{
