@@ -11,6 +11,7 @@
 #import "AZRootViewController.h"
 
 #import "AZDataSource.h"
+#import "AZSection.h"
 
 #define kAvatarAnimateKey @"avatar_bounce"
 
@@ -218,7 +219,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"SectionCellIdentifier"];
     
+    AZSection *section = self.sections[indexPath.row];
+    
+    cell.textLabel.text = section.title;
+    
+    return cell;
 }
 
 @end

@@ -24,6 +24,12 @@
 		E7273D46173278ED00F82FFE /* avatar_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = E7273D44173278ED00F82FFE /* avatar_selected.png */; };
 		E7273D47173278ED00F82FFE /* avatar_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7273D45173278ED00F82FFE /* avatar_selected@2x.png */; };
 		E7273D4C173282BF00F82FFE /* AZDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E7273D4B173282BF00F82FFE /* AZDataSource.m */; };
+		E7273D521732870800F82FFE /* AZSection.m in Sources */ = {isa = PBXBuildFile; fileRef = E7273D511732870800F82FFE /* AZSection.m */; };
+		E7273D551732871400F82FFE /* AZSectionDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = E7273D541732871400F82FFE /* AZSectionDetail.m */; };
+		E7273D59173290CC00F82FFE /* AZSectionDetailContentText.m in Sources */ = {isa = PBXBuildFile; fileRef = E7273D58173290CC00F82FFE /* AZSectionDetailContentText.m */; };
+		E7273D5C173290EC00F82FFE /* AZSectionDetailContentApps.m in Sources */ = {isa = PBXBuildFile; fileRef = E7273D5B173290EC00F82FFE /* AZSectionDetailContentApps.m */; };
+		E7273D5F173290F700F82FFE /* AZSectionDetailContentList.m in Sources */ = {isa = PBXBuildFile; fileRef = E7273D5E173290F700F82FFE /* AZSectionDetailContentList.m */; };
+		E7273D611732938D00F82FFE /* sections.json in Resources */ = {isa = PBXBuildFile; fileRef = E7273D601732938D00F82FFE /* sections.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +56,17 @@
 		E7273D45173278ED00F82FFE /* avatar_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "avatar_selected@2x.png"; path = "Imagery/avatar_selected@2x.png"; sourceTree = "<group>"; };
 		E7273D4A173282BF00F82FFE /* AZDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZDataSource.h; path = Model/AZDataSource.h; sourceTree = "<group>"; };
 		E7273D4B173282BF00F82FFE /* AZDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AZDataSource.m; path = Model/AZDataSource.m; sourceTree = "<group>"; };
+		E7273D501732870800F82FFE /* AZSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZSection.h; path = Model/AZSection.h; sourceTree = "<group>"; };
+		E7273D511732870800F82FFE /* AZSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AZSection.m; path = Model/AZSection.m; sourceTree = "<group>"; };
+		E7273D531732871400F82FFE /* AZSectionDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZSectionDetail.h; path = Model/AZSectionDetail.h; sourceTree = "<group>"; };
+		E7273D541732871400F82FFE /* AZSectionDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AZSectionDetail.m; path = Model/AZSectionDetail.m; sourceTree = "<group>"; };
+		E7273D57173290CC00F82FFE /* AZSectionDetailContentText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZSectionDetailContentText.h; path = "Model/Content Types/AZSectionDetailContentText.h"; sourceTree = "<group>"; };
+		E7273D58173290CC00F82FFE /* AZSectionDetailContentText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AZSectionDetailContentText.m; path = "Model/Content Types/AZSectionDetailContentText.m"; sourceTree = "<group>"; };
+		E7273D5A173290EC00F82FFE /* AZSectionDetailContentApps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZSectionDetailContentApps.h; path = "Model/Content Types/AZSectionDetailContentApps.h"; sourceTree = "<group>"; };
+		E7273D5B173290EC00F82FFE /* AZSectionDetailContentApps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AZSectionDetailContentApps.m; path = "Model/Content Types/AZSectionDetailContentApps.m"; sourceTree = "<group>"; };
+		E7273D5D173290F700F82FFE /* AZSectionDetailContentList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AZSectionDetailContentList.h; path = "Model/Content Types/AZSectionDetailContentList.h"; sourceTree = "<group>"; };
+		E7273D5E173290F700F82FFE /* AZSectionDetailContentList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AZSectionDetailContentList.m; path = "Model/Content Types/AZSectionDetailContentList.m"; sourceTree = "<group>"; };
+		E7273D601732938D00F82FFE /* sections.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sections.json; path = Model/sections.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,10 +163,29 @@
 		E7273D491732829100F82FFE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E7273D601732938D00F82FFE /* sections.json */,
+				E7273D561732909000F82FFE /* Content Types */,
 				E7273D4A173282BF00F82FFE /* AZDataSource.h */,
 				E7273D4B173282BF00F82FFE /* AZDataSource.m */,
+				E7273D501732870800F82FFE /* AZSection.h */,
+				E7273D511732870800F82FFE /* AZSection.m */,
+				E7273D531732871400F82FFE /* AZSectionDetail.h */,
+				E7273D541732871400F82FFE /* AZSectionDetail.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		E7273D561732909000F82FFE /* Content Types */ = {
+			isa = PBXGroup;
+			children = (
+				E7273D57173290CC00F82FFE /* AZSectionDetailContentText.h */,
+				E7273D58173290CC00F82FFE /* AZSectionDetailContentText.m */,
+				E7273D5A173290EC00F82FFE /* AZSectionDetailContentApps.h */,
+				E7273D5B173290EC00F82FFE /* AZSectionDetailContentApps.m */,
+				E7273D5D173290F700F82FFE /* AZSectionDetailContentList.h */,
+				E7273D5E173290F700F82FFE /* AZSectionDetailContentList.m */,
+			);
+			name = "Content Types";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +249,7 @@
 				E7273D3F173276C800F82FFE /* avatar@2x.png in Resources */,
 				E7273D46173278ED00F82FFE /* avatar_selected.png in Resources */,
 				E7273D47173278ED00F82FFE /* avatar_selected@2x.png in Resources */,
+				E7273D611732938D00F82FFE /* sections.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +264,11 @@
 				E7273D29173272A100F82FFE /* AZAppDelegate.m in Sources */,
 				E7273D39173272C800F82FFE /* AZRootViewController.m in Sources */,
 				E7273D4C173282BF00F82FFE /* AZDataSource.m in Sources */,
+				E7273D521732870800F82FFE /* AZSection.m in Sources */,
+				E7273D551732871400F82FFE /* AZSectionDetail.m in Sources */,
+				E7273D59173290CC00F82FFE /* AZSectionDetailContentText.m in Sources */,
+				E7273D5C173290EC00F82FFE /* AZSectionDetailContentApps.m in Sources */,
+				E7273D5F173290F700F82FFE /* AZSectionDetailContentList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

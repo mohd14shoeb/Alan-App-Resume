@@ -8,16 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AZSection : NSObject
-
-@property (strong, nonatomic) NSString *title;
-
-- (id)initWithTitle:(NSString *)title;
-
-@end
-
 @interface AZDataSource : NSObject
 
-+ (NSArray *)sections;
++ (NSArray *)sections; // NSArray<AZSection>
 
 @end
